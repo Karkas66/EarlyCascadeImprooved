@@ -7,7 +7,11 @@
 
 > It's a modern and stealthy process injection technique was discovered by [Outflank](https://www.outflank.nl/) that involves injecting and executing code in the early stages of process creation before loading EDRs for their user mode detection measures. EarlyCascade technique forces enabling the Shim engine, allowing to hijack a Shim engine callback.
 
-## About the proof-of-concept
+## Why "improoved"
+The original Code by [0xNinjaCyclone](https://github.com/0xNinjaCyclone/EarlyCascade) had hardcoded Injection Process Name and static plain Shellcode. I wanted to load dynamic Shellcode from files into a process of my choice. To get rid of plain msfvenom shellcode detections by several AVs I made a basic XOR Encryption of the embedded shellcode. I also made a Visual Studio 2022 Template, ready to compile and run.
+
+(Original Readme from here)
+## About the proof-of-concept 
 1. Creating a process in suspended mode.
 2. Dynamically locating the addresses of enabling flag and callback.
 3. Remotely allocating memory for our stub and shellcode.
