@@ -9,6 +9,7 @@
 
 ## Why "improoved"
 The original Code by [0xNinjaCyclone](https://github.com/0xNinjaCyclone/EarlyCascade) had hardcoded Injection Process Name and static plain Shellcode. I wanted to load dynamic Shellcode from files into a process of my choice. To get rid of plain msfvenom shellcode detections by several AVs I made a basic XOR Encryption of the embedded shellcode. I also made a Visual Studio 2022 Template, ready to compile and run.
+Did not yet find the problem why not msfvenom shellcode crashes the hosting payload process. So just use msfvenom SC for now. I successfully tested with meterpreter_reverse_tcp
 
 (Original Readme from here)
 ## About the proof-of-concept 
