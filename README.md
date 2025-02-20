@@ -1,4 +1,4 @@
-<h1 align="center">EarlyCascade Improoved</h1>
+<h1 align="center">EarlyCascade Improved</h1>
 
 
 <p align="center">
@@ -7,9 +7,9 @@
 
 > It's a modern and stealthy process injection technique was discovered by [Outflank](https://www.outflank.nl/) that involves injecting and executing code in the early stages of process creation before loading EDRs for their user mode detection measures. EarlyCascade technique forces enabling the Shim engine, allowing to hijack a Shim engine callback.
 
-## Why "improoved"
+## Why "improved"
 The original Code by [0xNinjaCyclone](https://github.com/0xNinjaCyclone/EarlyCascade) had hardcoded Injection Process Name and static plain Shellcode. I wanted to load dynamic Shellcode from files into a process of my choice. To get rid of plain msfvenom shellcode detections by several AVs I made a basic XOR Encryption of the embedded shellcode. I also made a Visual Studio 2022 Template, ready to compile and run.
-Did not yet find the problem why not msfvenom shellcode crashes the hosting payload process. So just use msfvenom SC for now. I successfully tested with meterpreter_reverse_tcp
+Did not yet find the problem why not msfvenom shellcode crashes the hosting payload process. So just use msfvenom SC for now. I successfully tested it with meterpreter_reverse_tcp
 
 (Original Readme from here)
 ## About the proof-of-concept 
